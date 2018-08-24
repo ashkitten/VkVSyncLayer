@@ -1,0 +1,17 @@
+{
+    "file_format_version": "1.0.0",
+    "layer": {
+        "name": "VK_LAYER_KITY_VSync",
+        "type": "GLOBAL",
+        "library_path": "./libvsync_layer.so",
+        "api_version": "1.1.77",
+        "implementation_version": "1",
+        "description": "Layer that forces vsync",
+        "functions": {
+            "vkGetInstanceProcAddr": "VSyncLayer_GetInstanceProcAddr",
+            "vkGetDeviceProcAddr": "VSyncLayer_GetDeviceProcAddr"
+        },
+        "enable_environment": { "ENABLE_VK_LAYER_KITY_VSync": "1" },
+        "disable_environment": { "DISABLE_VK_LAYER_KITY_VSync": "1" }
+    }
+}
