@@ -1,6 +1,8 @@
 #include <vulkan/vulkan.h>
 #include <vulkan/vk_layer.h>
 
+#include "vk_layer_dispatch_table.h"
+
 #include <assert.h>
 #include <string.h>
 
